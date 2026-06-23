@@ -44,11 +44,11 @@
   :root{--bg:#0e0f17;--card:#171926;--accent:#6c5ce7;--accent2:#00b894;--text:#eef0f7;--muted:#9296a3;--line:rgba(255,255,255,.08)}
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:#eef0f7;line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{font-family:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;background:radial-gradient(1100px 560px at 50% -160px,rgba(108,92,231,.22),transparent 70%),var(--bg);color:#eef0f7;line-height:1.6;-webkit-font-smoothing:antialiased}
   .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
   a{color:inherit;text-decoration:none}
-  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:14px 26px;border-radius:14px;font-weight:700;font-size:16px;transition:.2s;border:none;cursor:pointer}
-  .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(108,92,231,.4)}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(120deg,#7d6cf0,#6c5ce7);color:#fff;padding:14px 26px;border-radius:14px;font-weight:700;font-size:16px;transition:.2s;border:none;cursor:pointer;box-shadow:0 6px 18px rgba(108,92,231,.28)}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(108,92,231,.5)}
   .btn.ghost{background:rgba(255,255,255,.06);border:1px solid var(--line)}
   /* header */
   header{position:sticky;top:0;background:rgba(14,15,23,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:50}
@@ -78,7 +78,7 @@
   @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.grid{grid-template-columns:1fr}}
   .feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.2s}
-  .feat:hover{border-color:rgba(108,92,231,.5);transform:translateY(-3px)}
+  .feat:hover{border-color:rgba(108,92,231,.5);transform:translateY(-4px);box-shadow:0 16px 38px rgba(0,0,0,.28)}
   .feat .ic{font-size:30px;margin-bottom:14px}
   .feat h3{font-size:18px;margin-bottom:8px}
   .feat p{color:var(--muted);font-size:14.5px}
