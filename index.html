@@ -16,16 +16,21 @@
 <meta property="og:description" content="37 бухгалтерских документов за 30 секунд, ИИ-помощник по налогам 2026 и приём оплаты Kaspi с проверкой чеков. Для бизнеса в Казахстане.">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Qujat">
+<meta property="og:image" content="https://qujat.digital/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Qujat — бухгалтерские документы, налоги и приём оплаты для бизнеса в Казахстане">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Qujat — бухгалтерия и приём оплаты в Telegram">
 <meta name="twitter:description" content="37 документов за 30 сек, ИИ по налогам 2026, приём оплаты Kaspi. Для бизнеса в Казахстане.">
+<meta name="twitter:image" content="https://qujat.digital/og-cover.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Qujat",
 "applicationCategory":"BusinessApplication","operatingSystem":"Telegram, Web",
 "description":"Бухгалтерия, документы, налоги 2026 и приём оплаты Kaspi для бизнеса в Казахстане.",
 "url":"https://qujat.digital/","inLanguage":["ru","kk"],
-"offers":{"@type":"Offer","price":"0","priceCurrency":"KZT","description":"Первые 5 документов бесплатно"},
+"offers":{"@type":"Offer","price":"0","priceCurrency":"KZT","description":"7 дней Pro бесплатно, далее бесплатный тариф — 5 документов в месяц"},
 "areaServed":{"@type":"Country","name":"Kazakhstan"}}
 </script>
 <script type="application/ld+json">
@@ -57,7 +62,16 @@
   .logo img{height:25px;width:auto;display:block}
   .nav{display:flex;gap:26px;align-items:center}
   .nav a{color:var(--muted);font-size:15px}.nav a:hover{color:#fff}
-  @media(max-width:720px){.nav .lnk{display:none}}
+  .burger{display:none;font-size:26px;line-height:1;cursor:pointer;color:#fff;background:none;border:none;padding:4px 8px}
+  @media(max-width:720px){
+    .burger{display:block}
+    .nav{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;align-items:stretch;
+         background:rgba(14,15,23,.98);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+         padding:8px 20px 18px;display:none}
+    .navtoggle:checked ~ .nav{display:flex}
+    .nav .lnk{padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
+    .nav .btn{width:100%;justify-content:center;margin-top:12px}
+  }
   /* hero */
   .hero{text-align:center;padding:90px 0 70px}
   .badge{display:inline-block;background:rgba(108,92,231,.15);color:#a99bff;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:22px}
@@ -130,6 +144,8 @@
 <body>
 <header><div class="wrap">
   <div class="logo"><img src="qujat-logo-white.png" alt="Qujat"></div>
+  <input type="checkbox" id="navtoggle" class="navtoggle" hidden>
+  <label for="navtoggle" class="burger" aria-label="Меню">☰</label>
   <nav class="nav">
     <a class="lnk" href="#features">Возможности</a>
     <a class="lnk" href="/blog/">Блог</a>
@@ -142,8 +158,8 @@
 <div class="wrap">
   <section class="hero">
     <span class="badge">🇰🇿 Для бизнеса в Казахстане · 2026</span>
-    <h1>Бухгалтерия 2026 — в браузере и Telegram</h1>
-    <p>Qujat создаёт 30+ бухгалтерских документов за минуту, считает налоги РК 2026, отвечает на вопросы с ИИ и принимает оплату Kaspi с проверкой чеков.</p>
+    <h1>37 бухгалтерских документов за 30 секунд — без бухгалтера</h1>
+    <p>Qujat считает налоги РК 2026, отвечает на вопросы с ИИ и принимает оплату Kaspi с проверкой чеков — прямо в браузере и Telegram. Первые документы бесплатно.</p>
     <div class="cta">
       <a class="btn" href="https://app.qujat.digital">🚀 Открыть в браузере</a>
       <a class="btn ghost" href="https://t.me/Qujatkz_bot">Telegram-бот</a>
